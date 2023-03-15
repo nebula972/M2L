@@ -1,0 +1,167 @@
+/*debut accueil*/
+/* debut barre de navigation*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 52px;
+}
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 20px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+li:last-child {
+  border-right: none;
+}
+.active {
+  background-color: #04AA6D;
+}
+
+/*fin barre navigation*/
+
+/*debut barre deroulante*/
+.sous{
+  display: none;
+  width: fit-content;
+  z-index: 1000;
+}
+ul{
+  overflow: visible;
+}
+ul .deroulant:hover .sous{
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.sous li{
+  float: none;
+  width: 100%;
+  background-color: #333;
+  border-bottom: 1px solid #bbb;
+}
+.sous li:last-child{
+  border-bottom: none;
+}
+.sous a{
+  padding: 10px;
+  border-bottom: none;
+}
+.deroulant > a::after{
+  content: " ▼";
+  font-size: 12px;
+}
+.sous a:hover{
+  border-bottom: none;
+  background-color: #111;
+}
+/*fin barre deroulante*/
+
+/*banner debut*/
+.banner {
+  margin-top: 4%;
+  background-image:url("images/bannerv2.png");
+  height: 250px;
+  }
+
+
+/*banner fin*/
+/*debut text*/
+.pres{
+  text-align: center;
+  font-size: 120%;
+}
+footer{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8%;
+  background-color: grey;
+  color: white;
+  text-align:center;
+}
+iframe{
+  margin: auto;
+}
+/*fin text*/
+/*fin accueil*/
+
+/*debut connexion*/
+.new{
+  font-size: 120%;
+  
+}
+/*fin connexion*/
+
+/* debut presentatation */
+.presentation{
+  margin: 0% 35% 0% 5%;
+  position: unset;
+  background-color: white;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mytab{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+}
+/* fin presentation */
+
+
+/*debut contact*/
+ 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} 
+/*fin contact*/
+
+/*resultat*/
+.res{
+  margin: 0% 35% 0% 5%;
+  position: unset;
+  background-color: white;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
